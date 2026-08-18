@@ -11,7 +11,7 @@ A high-performance, distraction-free clinical revision and exam preparation plat
 
 ## Dashboard Preview
 
-![Mulwa Clinical Portal Dashboard](image.png)
+![Mulwa Clinical Portal Dashboard](readme-hero.png)
 
 ---
 
@@ -102,7 +102,7 @@ The portal includes comprehensive past papers with complete clinical rationales:
 ├── package.json                       # Dependencies and project metadata
 ├── tsconfig.json                      # TypeScript configuration
 ├── vite.config.ts                     # Vite build configuration
-├── image.png                          # Dashboard screenshot
+├── readme-hero.png                    # Dashboard hero screenshot
 └── README.md                          # Documentation
 ```
 
