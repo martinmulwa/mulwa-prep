@@ -268,7 +268,7 @@ export function getActivityLog(progress: SessionProgress): ActivityLog[] {
   Object.entries(progress.completedSets || {}).forEach(([id, data]) => {
     const { paperId, setId } = parseSetKey(id);
     const paper = findPaper(paperId);
-    const paperTitle = paper ? `${paper.year} · ${paper.title}` : 'End of Year 1 Exam (1)';
+    const paperTitle = paper ? (paper.year ? `${paper.year} · ${paper.title}` : paper.title) : 'End of Year 1 Exam (1)';
     const totalInSet = getSetTotalQuestions(paperId, setId);
     const scorePercentage = Math.round(((data.score || 0) / totalInSet) * 100);
     const setNum = parseInt(setId.replace('set', ''), 10) || 1;
@@ -288,7 +288,7 @@ export function getActivityLog(progress: SessionProgress): ActivityLog[] {
   Object.entries(progress.inProgressSets || {}).forEach(([id, state]) => {
     const { paperId, setId } = parseSetKey(id);
     const paper = findPaper(paperId);
-    const paperTitle = paper ? `${paper.year} · ${paper.title}` : 'End of Year 1 Exam (1)';
+    const paperTitle = paper ? (paper.year ? `${paper.year} · ${paper.title}` : paper.title) : 'End of Year 1 Exam (1)';
     const totalInSet = getSetTotalQuestions(paperId, setId);
     const answeredCount = Object.keys(state.answers || {}).length;
     const pct = Math.round((answeredCount / totalInSet) * 100);

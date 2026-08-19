@@ -61,6 +61,10 @@ The portal includes comprehensive past papers with complete clinical rationales:
 | **End of Year 1 Exam (1)** | 2023 | 70 MCQs | 4 Sets (Sets 1–3: 20 Qs, Set 4: 10 Qs) | Cell Biology, Musculoskeletal, Nervous System, Cardiovascular, Respiratory, GI, Renal, Endocrine |
 | **End of Year 1 Exam (2)** | 2024 | 70 MCQs | 4 Sets (Sets 1–3: 20 Qs, Set 4: 10 Qs) | Homeostasis, Autonomic Nervous System, Renal Physiology, Pharmacology, Immunology, Nursing Process |
 | **End of Year 1 Exam (3)** | 2025 | 118 MCQs | 6 Sets (Sets 1–5: 20 Qs, Set 6: 18 Qs) | Pathophysiology, Surgical Nursing, Gastrointestinal Disorders, Emergency & Critical Care, Fluid & Electrolytes |
+| **End of Year 1 Exam (4)** | Comprehensive | 120 MCQs | 6 Sets (Sets 1–6: 20 Qs each) | Emergency Nursing, Cardiopulmonary Care, Pharmacology, Nursing Process & Ethics, Surgical/Perioperative Care, Renal & Gastrointestinal |
+| **End of Year 1 Exam (5)** | Comprehensive | 120 MCQs | 6 Sets (Sets 1–6: 20 Qs each) | Respiratory Care, Microbiology & Environmental Hygiene, Community Health & Primary Care, Psychiatric & Mental Health, Pediatrics & IMNCI, Obstetric & Reproductive Health |
+| **End of Year 1 Exam (6)** | 2022 | 120 MCQs | 6 Sets (Sets 1–6: 20 Qs each) | Hematology & Coagulation, Endocrine & Renal Disorders, Perioperative Nursing & Waste Management, Cardiopulmonary & Critical Care, Pediatric Emergencies & Pharmacokinetics |
+| **End of Year 1 Exam (7)** | Comprehensive | 120 MCQs | 6 Sets (Sets 1–6: 20 Qs each) | Nursing Theories & Ethics, Gastrointestinal & Surgical Care, Renal & Fluid Dynamics, Cardiovascular & Respiratory Management, Endocrine & Reproductive Health |
 
 ---
 
@@ -91,7 +95,26 @@ The portal includes comprehensive past papers with complete clinical rationales:
 │   │   ├── ReviewIncorrectScreen.tsx  # Mistakes review queue with rationales
 │   │   └── RevisionSetSelection.tsx   # 20-question module selector
 │   ├── data/
-│   │   └── questions.ts               # Question repository & past papers
+│   │   ├── papers/                    # Modular past paper modules
+│   │   │   ├── paper1.ts              # End of Year 1 Exam (1) - 70 MCQs
+│   │   │   ├── paper2.ts              # End of Year 1 Exam (2) - 70 MCQs
+│   │   │   ├── paper3.ts              # End of Year 1 Exam (3) - 118 MCQs
+│   │   │   ├── paper4.ts              # End of Year 1 Exam (4) - 120 MCQs
+│   │   │   ├── paper4_part1.ts        # Exam 4 part 1
+│   │   │   ├── paper4_part2.ts        # Exam 4 part 2
+│   │   │   ├── paper5.ts              # End of Year 1 Exam (5) - 120 MCQs
+│   │   │   ├── paper5_part1.ts        # Exam 5 part 1
+│   │   │   ├── paper5_part2.ts        # Exam 5 part 2
+│   │   │   ├── paper6.ts              # End of Year 1 Exam (6) - 120 MCQs
+│   │   │   ├── paper6_part1.ts        # Exam 6 part 1
+│   │   │   ├── paper6_part2.ts        # Exam 6 part 2
+│   │   │   ├── paper7.ts              # End of Year 1 Exam (7) - 120 MCQs
+│   │   │   ├── paper7_part1.ts        # Exam 7 part 1
+│   │   │   ├── paper7_part2.ts        # Exam 7 part 2
+│   │   │   └── index.ts               # Registry & aggregator of all papers
+│   │   ├── validator.ts               # Automated schema & data integrity checks
+│   │   ├── questions.ts               # Central export & set slicing utilities
+│   │   └── index.ts                   # Data layer barrel export
 │   ├── utils/
 │   │   └── storage.ts                 # Session storage persistence layer
 │   ├── types.ts                       # TypeScript interfaces & types
@@ -138,6 +161,34 @@ The portal includes comprehensive past papers with complete clinical rationales:
    ```bash
    npm run build
    ```
+
+---
+
+## Adding New Past Papers (Quick Scaling Guide)
+
+The modular database architecture allows you to add any new exam paper in 3 simple steps:
+
+1. **Create the Paper File:** Create `src/data/papers/paper5.ts` defining your `PastPaper` object:
+   ```ts
+   import { PastPaper } from '../../types';
+
+   export const PAPER_5: PastPaper = {
+     id: "eoy1-nursing-exam-5",
+     year: "2026",
+     title: "End of Year 1 Exam (5)",
+     totalQuestions: 70,
+     totalSets: 4,
+     questions: [ /* array of Question objects */ ]
+   };
+   ```
+
+2. **Register in Aggregator:** Add `PAPER_5` to `ALL_PAPERS` in `src/data/papers/index.ts`:
+   ```ts
+   import { PAPER_5 } from './paper5';
+   export const ALL_PAPERS: PastPaper[] = [PAPER_1, PAPER_2, PAPER_3, PAPER_4, PAPER_5];
+   ```
+
+3. **Verify Integrity:** Run `npm run lint` or `npm run build`. The schema validator will automatically verify question uniqueness, options completeness, and rationale definitions!
 
 ---
 
