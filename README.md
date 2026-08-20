@@ -67,6 +67,8 @@ The portal includes comprehensive past papers with complete clinical rationales:
 | **End of Year 1 Exam (7)** | Comprehensive | 120 MCQs | 6 Sets (Sets 1–6: 20 Qs each) | Nursing Theories & Ethics, Gastrointestinal & Surgical Care, Renal & Fluid Dynamics, Cardiovascular & Respiratory Management, Endocrine & Reproductive Health |
 | **End of Year 1 Exam (8)** | 2024 | 120 MCQs | 6 Sets (Sets 1–6: 20 Qs each) | Psychiatric Nursing, Primary Health Care, IMNCI & Pediatric Care, Maternal & Reproductive Health, Pharmacotherapy, Infectious Diseases & Immunology |
 | **End of Year 1 Exam (9)** | 2022 | 120 MCQs | 6 Sets (Sets 1–6: 20 Qs each) | Medico-Legal Ethics & Documentation, Biochemistry & Muscle Physiology, Pediatric Emergency & IMCI, Clinical Pharmacology & Toxicology, Community Health & Environmental Sanitation |
+| **End of Year 1 Exam (10)** | 2022 | 50 MCQs | 3 Sets (Sets 1–2: 20 Qs, Set 3: 10 Qs) | Gastrointestinal Disorders, Endoscopy & Barium Diagnostics, Esophageal Pathology & GERD, Abdominal Physical Assessment & Liver Function Tests |
+| **End of Year 2 Exam (1)** | 2023 | 120 MCQs | 6 Sets (Sets 1–6: 20 Qs each) | Inhaler Technique & Respiratory Pharmacology, Neonatal & Pediatric Emergencies, Community & Primary Health Care, Psychiatric Disorders & Psychopharmacology, Reproductive Health & Obstetric Nursing |
 
 ---
 
@@ -119,6 +121,7 @@ The portal includes comprehensive past papers with complete clinical rationales:
 │   │   │   ├── paper9.ts              # End of Year 1 Exam (9) - 120 MCQs
 │   │   │   ├── paper9_part1.ts        # Exam 9 part 1
 │   │   │   ├── paper9_part2.ts        # Exam 9 part 2
+│   │   │   ├── paper10.ts             # End of Year 1 Exam (10) - 50 MCQs
 │   │   │   └── index.ts               # Registry & aggregator of all papers
 │   │   ├── validator.ts               # Automated schema & data integrity checks
 │   │   ├── questions.ts               # Central export & set slicing utilities

@@ -10,11 +10,31 @@
  */
 
 import { Question, PastPaper } from '../types';
-import { ALL_PAPERS, PAPER_1, PAPER_2, PAPER_3, PAPER_4, PAPER_5, PAPER_6, PAPER_7, PAPER_8, PAPER_9 } from './papers';
+import { ALL_PAPERS, PAPER_1, PAPER_2, PAPER_3, PAPER_4, PAPER_5, PAPER_6, PAPER_7, PAPER_8, PAPER_9, PAPER_10, PAPER_11 } from './papers';
 import { validatePastPaper, validateAllPapers, PaperValidationReport } from './validator';
 
 /** Master collection of curated past examination papers */
 export const PAST_PAPERS: PastPaper[] = ALL_PAPERS;
+
+export type ExamYearCategory = 'End of Year 1' | 'End of Year 2';
+
+/**
+ * Returns the academic year category for an exam paper.
+ */
+export function getPaperCategory(paper: PastPaper): ExamYearCategory {
+  if (paper.category) return paper.category;
+  if (paper.id.toLowerCase().startsWith('eoy2') || paper.title.toLowerCase().includes('year 2')) {
+    return 'End of Year 2';
+  }
+  return 'End of Year 1';
+}
+
+/**
+ * Filters past papers by year category.
+ */
+export function getPapersByCategory(category: ExamYearCategory): PastPaper[] {
+  return PAST_PAPERS.filter(p => getPaperCategory(p) === category);
+}
 
 /**
  * Finds a past paper by exact ID, title, or fuzzy match. Defaults to the first paper if not found.
@@ -67,6 +87,8 @@ export {
   PAPER_7,
   PAPER_8,
   PAPER_9,
+  PAPER_10,
+  PAPER_11,
   validatePastPaper,
   validateAllPapers,
   type PaperValidationReport

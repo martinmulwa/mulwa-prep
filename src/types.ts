@@ -52,6 +52,7 @@ export interface PastPaper {
   totalQuestions: number;
   totalSets: number;
   questions: Question[];
+  category?: 'End of Year 1' | 'End of Year 2';
 }
 
 /**
