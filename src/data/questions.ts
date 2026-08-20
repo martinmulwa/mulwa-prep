@@ -10,7 +10,7 @@
  */
 
 import { Question, PastPaper } from '../types';
-import { ALL_PAPERS, PAPER_1, PAPER_2, PAPER_3, PAPER_4, PAPER_5, PAPER_6, PAPER_7 } from './papers';
+import { ALL_PAPERS, PAPER_1, PAPER_2, PAPER_3, PAPER_4, PAPER_5, PAPER_6, PAPER_7, PAPER_8, PAPER_9 } from './papers';
 import { validatePastPaper, validateAllPapers, PaperValidationReport } from './validator';
 
 /** Master collection of curated past examination papers */
@@ -65,6 +65,8 @@ export {
   PAPER_5,
   PAPER_6,
   PAPER_7,
+  PAPER_8,
+  PAPER_9,
   validatePastPaper,
   validateAllPapers,
   type PaperValidationReport

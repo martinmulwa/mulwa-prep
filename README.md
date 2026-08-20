@@ -65,6 +65,8 @@ The portal includes comprehensive past papers with complete clinical rationales:
 | **End of Year 1 Exam (5)** | Comprehensive | 120 MCQs | 6 Sets (Sets 1–6: 20 Qs each) | Respiratory Care, Microbiology & Environmental Hygiene, Community Health & Primary Care, Psychiatric & Mental Health, Pediatrics & IMNCI, Obstetric & Reproductive Health |
 | **End of Year 1 Exam (6)** | 2022 | 120 MCQs | 6 Sets (Sets 1–6: 20 Qs each) | Hematology & Coagulation, Endocrine & Renal Disorders, Perioperative Nursing & Waste Management, Cardiopulmonary & Critical Care, Pediatric Emergencies & Pharmacokinetics |
 | **End of Year 1 Exam (7)** | Comprehensive | 120 MCQs | 6 Sets (Sets 1–6: 20 Qs each) | Nursing Theories & Ethics, Gastrointestinal & Surgical Care, Renal & Fluid Dynamics, Cardiovascular & Respiratory Management, Endocrine & Reproductive Health |
+| **End of Year 1 Exam (8)** | 2024 | 120 MCQs | 6 Sets (Sets 1–6: 20 Qs each) | Psychiatric Nursing, Primary Health Care, IMNCI & Pediatric Care, Maternal & Reproductive Health, Pharmacotherapy, Infectious Diseases & Immunology |
+| **End of Year 1 Exam (9)** | 2022 | 120 MCQs | 6 Sets (Sets 1–6: 20 Qs each) | Medico-Legal Ethics & Documentation, Biochemistry & Muscle Physiology, Pediatric Emergency & IMCI, Clinical Pharmacology & Toxicology, Community Health & Environmental Sanitation |
 
 ---
 
@@ -111,6 +113,12 @@ The portal includes comprehensive past papers with complete clinical rationales:
 │   │   │   ├── paper7.ts              # End of Year 1 Exam (7) - 120 MCQs
 │   │   │   ├── paper7_part1.ts        # Exam 7 part 1
 │   │   │   ├── paper7_part2.ts        # Exam 7 part 2
+│   │   │   ├── paper8.ts              # End of Year 1 Exam (8) - 120 MCQs
+│   │   │   ├── paper8_part1.ts        # Exam 8 part 1
+│   │   │   ├── paper8_part2.ts        # Exam 8 part 2
+│   │   │   ├── paper9.ts              # End of Year 1 Exam (9) - 120 MCQs
+│   │   │   ├── paper9_part1.ts        # Exam 9 part 1
+│   │   │   ├── paper9_part2.ts        # Exam 9 part 2
 │   │   │   └── index.ts               # Registry & aggregator of all papers
 │   │   ├── validator.ts               # Automated schema & data integrity checks
 │   │   ├── questions.ts               # Central export & set slicing utilities
