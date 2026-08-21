@@ -69,6 +69,9 @@ The portal includes comprehensive past papers with complete clinical rationales:
 | **End of Year 1 Exam (9)** | 2022 | 120 MCQs | 6 Sets (Sets 1–6: 20 Qs each) | Medico-Legal Ethics & Documentation, Biochemistry & Muscle Physiology, Pediatric Emergency & IMCI, Clinical Pharmacology & Toxicology, Community Health & Environmental Sanitation |
 | **End of Year 1 Exam (10)** | 2022 | 50 MCQs | 3 Sets (Sets 1–2: 20 Qs, Set 3: 10 Qs) | Gastrointestinal Disorders, Endoscopy & Barium Diagnostics, Esophageal Pathology & GERD, Abdominal Physical Assessment & Liver Function Tests |
 | **End of Year 2 Exam (1)** | 2023 | 120 MCQs | 6 Sets (Sets 1–6: 20 Qs each) | Inhaler Technique & Respiratory Pharmacology, Neonatal & Pediatric Emergencies, Community & Primary Health Care, Psychiatric Disorders & Psychopharmacology, Reproductive Health & Obstetric Nursing |
+| **End of Year 2 Exam (2)** | 2024 | 120 MCQs | 6 Sets (Sets 1–6: 20 Qs each) | Professional Ethics & Communication, Trauma & Critical Care Resuscitation, Perioperative & Surgical Nursing, Endocrine & Renal Physiology, Hematology & Oncology |
+| **End of Year 2 Exam (3)** | 2024 | 120 MCQs | 6 Sets (Sets 1–6: 20 Qs each) | Maternal-Fetal Medicine & Obstetrics, Neonatal Resuscitation & IMCI, Critical Care & Acid-Base Balance, Psychopharmacology, Surgical Asepsis & Epidemiology |
+| **End of Year 2 Exam (4)** | 2023 | 120 MCQs | 6 Sets (Sets 1–6: 20 Qs each) | Water-Related & Vector-Borne Diseases, Pediatric Triage & IMCI Protocols, Obstetric Mechanisms & Labor Stages, Mental Health & Psychopharmacology, Primary Health Care & Environmental Health |
 
 ---
 
