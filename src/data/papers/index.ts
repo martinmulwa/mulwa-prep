@@ -24,6 +24,10 @@ import { PAPER_15 } from './paper15';
 import { PAPER_16 } from './paper16';
 import { PAPER_17 } from './paper17';
 import { PAPER_18 } from './paper18';
+import { PAPER_19 } from './paper19';
+import { PAPER_20 } from './paper20';
+import { PAPER_21 } from './paper21';
+import { PAPER_22 } from './paper22';
 
 export const ALL_PAPERS: PastPaper[] = [
   PAPER_1,
@@ -43,7 +47,11 @@ export const ALL_PAPERS: PastPaper[] = [
   PAPER_11,
   PAPER_12,
   PAPER_14,
-  PAPER_13
+  PAPER_13,
+  PAPER_19,
+  PAPER_20,
+  PAPER_21,
+  PAPER_22
 ];
 
-export { PAPER_1, PAPER_2, PAPER_3, PAPER_4, PAPER_5, PAPER_6, PAPER_7, PAPER_8, PAPER_9, PAPER_10, PAPER_11, PAPER_12, PAPER_13, PAPER_14, PAPER_15, PAPER_16, PAPER_17, PAPER_18 };
+export { PAPER_1, PAPER_2, PAPER_3, PAPER_4, PAPER_5, PAPER_6, PAPER_7, PAPER_8, PAPER_9, PAPER_10, PAPER_11, PAPER_12, PAPER_13, PAPER_14, PAPER_15, PAPER_16, PAPER_17, PAPER_18, PAPER_19, PAPER_20, PAPER_21, PAPER_22 };
